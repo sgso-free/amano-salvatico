@@ -1,0 +1,24 @@
+.box{
+    width: calc(33% - 40px);
+    margin: 20px;
+    height: auto;
+    background: rgb(222, 222, 222);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+ .boxs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-details {
+    background-color: white; 
+    border: #858ac9 solid;
+    color: #858ac9;
+    margin: 2px;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+  }
