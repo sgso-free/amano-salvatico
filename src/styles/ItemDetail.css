@@ -1,0 +1,22 @@
+.box-detail{
+    width: calc(33% - 40px);
+    margin: 20px;
+    height: auto;
+    background: rgb(222, 222, 222);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    float: left;
+    border: 1px rgb(58, 60, 170) solid;
+    padding: 10px;
+}  
+
+.button-return {
+    background-color: #858ac9 ; 
+    border: #858ac9 solid;
+    color: #0e0e11;
+    margin: 2px;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+  }
