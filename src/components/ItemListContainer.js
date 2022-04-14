@@ -1,30 +1,24 @@
-import ItemCount from "./ItemCount";
 import { useEffect, useState } from "react";
 import productFetch from "../utils/productFetch";
-import ItemList from "./ItemList";
-import ItemDetailContainer from "./ItemDetailContainer";
+import ItemList from "./ItemList"; 
+import {useParams} from 'react-router-dom'
 
 const  {products} = require('../utils/products');
 
-const ItemListContainer = (params) => {
+const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
+    const {idCategory} = useParams();
+    console.log("Categoria" + idCategory);
 
     useEffect(() => {
-        productFetch(2000,products)
+        productFetch(2000,products.filter(item => idCategory===undefined || item.idCategory === parseInt(idCategory)))
             .then(result => setDatos(result))
             .catch(err=> console.log(err))
-    },[]);
-
-    const addCart = (qty) => {
-        console.log("Agregaste " + qty + " elementos al carrito.");
-        return;
-    }
+    },[datos]);
+   
     return(
         <div>
-            {params.gretting}
             <ItemList items={datos} />
-            <ItemCount stock={5} initial={1} onAdd={addCart}/>       
-            <ItemDetailContainer item={1}/>     
         </div>
     )
 }

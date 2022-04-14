@@ -1,5 +1,6 @@
 import './../styles/ItemDetail.css';
 import ItemCount from "./ItemCount";
+import {Link} from 'react-router-dom';
 
 const ItemDetail = ({item}) => {
 
@@ -19,7 +20,7 @@ const ItemDetail = ({item}) => {
                         <p> {item.stock} unidade{item.stock>1?"s":""} disponibles</p>
                         <p>[{item.description}]</p>
                         <ItemCount stock={item.stock} initial={1} onAdd={addCart}/> 
-                        <p><button className="button-return" >Volver</button></p>
+                        <p><Link to={'/category/'+item.idCategory} className="button-return" >Volver</Link></p>
                     </div>
                 : <p>Cargando!!</p>
             }
