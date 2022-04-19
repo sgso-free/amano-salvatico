@@ -1,0 +1,11 @@
+.button-checkout {
+    background-color: #c98590 ; 
+    border: #e95959 solid;
+    color: #ffffff;
+    margin: 2px;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }

@@ -1,5 +1,5 @@
 import cart from './../recursos/cart.png';
- function CartWidget () {
+ const  CartWidget  = () =>{
         return(
             <div className="navbar-nav">
                 <a href="#" className="nav-item nav-link" > <img src={cart} alt="Cart" height="36" /> 8 - Articulos</a>
