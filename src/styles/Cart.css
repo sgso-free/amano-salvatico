@@ -1,0 +1,62 @@
+.button-return {
+    background-color: #383379 ; 
+    border: #042849 solid;
+    color: #ffffff;
+    margin: 2px;
+    padding: 5px 5px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.box-cart {
+    width: 100%;
+}
+
+.lists {
+    
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+.item-list{
+    width: calc(33% - 40px);
+    margin: 20px;
+    height: auto;
+    background: rgb(222, 222, 222);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    justify-content: left;
+}
+
+.item-list p {
+    text-align: left;
+}
+  
+
+.button-borrar {
+    background-color: #858ac9 ; 
+    border: #858ac9 solid;
+    color: #0e0e11;
+    margin: 2px;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.button-borrar-all {
+    background-color: #831536 ; 
+    border: #b98c2c solid;
+    color: #ffffff;
+    margin: 2px;
+    padding: 5px 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
