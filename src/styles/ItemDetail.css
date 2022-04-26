@@ -4,21 +4,21 @@
     height: auto;
     background: rgb(222, 222, 222);
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
-    float: left;
+    float: center;
     border: 1px rgb(58, 60, 170) solid;
-    padding: 10px;
+    padding: 10px; 
 }  
 
-.button-return {
-    background-color: #858ac9 ; 
-    border: #858ac9 solid;
-    color: #0e0e11;
+.button-return-detail {
+    background-color: #383379 ; 
+    border: #042849 solid;
+    color: #ffffff;
     margin: 2px;
-    padding: 2px 2px;
+    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   

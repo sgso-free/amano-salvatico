@@ -1,18 +1,10 @@
 import CartItem from "./CartItem";
-import './../styles/Cart.css';
-import {useContext} from 'react'; 
-import {CartContext} from "./CartContext";
+import './../styles/Cart.css'; 
 
 const CartList = ( {items} ) => {
-
-    const cartContextLocal = useContext(CartContext);
-
+ 
     return(
-        <div className="lists"> 
-
-            {
-              (items.length >0) && <button onClick = {()=>cartContextLocal.removeList()} className="button-borrar-all" >Borrar Carrito</button>
-            }      
+        <div className="lists-item-cart"> 
             {               
                 items  ? 
                     items.length >0 ? items.map(itemInL => <CartItem key={itemInL.idItem} item={itemInL} />)

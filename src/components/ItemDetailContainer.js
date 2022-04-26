@@ -9,12 +9,12 @@ const ItemDetailContainer = (params) => {
     const [dato, setDato] = useState([]);
     const {idItem} = useParams();
     console.log("Item" + idItem);
-
+     
     useEffect(() => {
-        productFetch(2000,products[idItem])
+        productFetch(2000,products.find(itemInL=>itemInL.id === parseInt(idItem)))
             .then(result => setDato(result))
             .catch(err=> console.log(err))
-    },[]);
+    },[idItem]);
 
     
     return(

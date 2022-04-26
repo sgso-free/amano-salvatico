@@ -41,12 +41,55 @@ const CartContextProvider = ( {children}) => {
         console.log("Item Remove", id);
     }
 
+    const calcItemQty = () => {
+        let cartAmount = 0; 
+        for (let item of cartList) {
+            cartAmount += item.qtyItem; 
+        }
+        return cartAmount;
+    }
+
+    const calcTotalPerItem = (id) => {
+        let foundItem = cartList.find(itemInL=>itemInL.idItem === id);
+        return foundItem.qtyItem * foundItem.costItem
+    }
+
+    const calcSubTotal = () => {
+        let subT=0;
+        for (let item of cartList) {
+            subT += calcTotalPerItem(item.idItem); 
+        }
+        return subT;
+    }
+
+    const calcTaxes = () => {
+        return calcSubTotal() * 0.22; //IVA URUGUAY
+    }
+
+    const calcItemsQty = () => {
+        let qtyT=0;
+        for (let item of cartList) {
+            qtyT += item.qtyItem; 
+        }
+        return qtyT;
+    }
+
+    const calcTotal = () => { 
+        return calcSubTotal() + calcTaxes();
+    }
+
     return (
         <CartContext.Provider value={{
                         cartList, 
                         addToCart,
                         removeList,
-                        deleteItem
+                        deleteItem,
+                        calcItemQty,
+                        calcTotalPerItem,
+                        calcSubTotal,
+                        calcTaxes,
+                        calcItemsQty,
+                        calcTotal
                     }
             }> {/*Share more than one param, use doble {{}} so convert to object*/}
                 {children}

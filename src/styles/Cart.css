@@ -1,4 +1,4 @@
-.button-return {
+.button-return-cart {
     background-color: #383379 ; 
     border: #042849 solid;
     color: #ffffff;
@@ -7,14 +7,72 @@
     text-align: left;
     text-decoration: none;
     font-size: 14px;
-    display: inline-block;
+    float:left;
 }
 
-.box-cart {
+
+.lists-item-cart { 
+    width: 70%;  
+    float:left; 
+}
+
+.item-list{
     width: 100%;
+    margin: 0px;
+    height: auto;
+    background: rgb(222, 222, 222);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+}
+  
+ 
+.button-borrar-item {
+    background-color: #831536 ; 
+    border: #500c21 solid;
+    color: #ffffff;
+    margin: 2px;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
 }
 
-.lists {
+.button-borrar-all {
+    background-color: #831536 ; 
+    border: #500c21 solid;
+    color: #ffffff;
+    margin: 2px;
+    padding: 5px 5px;
+    text-align: left;
+    text-decoration: none;
+    float:right;
+    font-size: 14px;
+}
+
+span.red {
+    background: red;
+     border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+
+  .box-ckeckout {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    border: 2px solid #084298;    
+    text-align: left;
+  }
+
+.box-ckeckout div{
     
     width: 100%;
     align-items: center;
@@ -22,41 +80,22 @@
     
 }
 
-.item-list{
-    width: calc(33% - 40px);
+.bar-button {
+    width: 100%; 
+    height: 30px;
+    display: inline-block;
+}
+
+.box-cart {
+    width: 95%; 
     margin: 20px;
     height: auto;
-    background: rgb(222, 222, 222);
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    justify-content: left;
-}
-
-.item-list p {
-    text-align: left;
-}
-  
-
-.button-borrar {
-    background-color: #858ac9 ; 
-    border: #858ac9 solid;
-    color: #0e0e11;
-    margin: 2px;
-    padding: 2px 2px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 10px;
 }
 
-.button-borrar-all {
-    background-color: #831536 ; 
-    border: #b98c2c solid;
-    color: #ffffff;
-    margin: 2px;
-    padding: 5px 5px;
-    text-align: left;
-    text-decoration: none;
+.box-mid-cart {
+    width: 100%; 
+    margin: 20px 0px;
+    height: auto;
     display: inline-block;
-    font-size: 14px;
 }

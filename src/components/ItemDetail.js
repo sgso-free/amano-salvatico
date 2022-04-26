@@ -32,7 +32,7 @@ const ItemDetail = ({item}) => {
                             ?<ItemCount stock={item.stock} initial={itemCount} onAdd={addCart}/> 
                             :<Checkout/>
                         } 
-                        <p><Link to={'/category/'+item.idCategory} className="button-return" >Volver</Link></p>
+                        <Link to={'/category/'+item.idCategory} className="button-return-detail" >Volver</Link>
                     </div>
                 : <p>Cargando!!</p>
             }

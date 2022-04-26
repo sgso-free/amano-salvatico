@@ -8,10 +8,12 @@ import {CartContext} from "./CartContext";
     const cartLocal = useContext(CartContext);
 
         console.log(cartLocal);
+        let cartAmount = cartLocal.calcItemQty();
 
+        console.log("Amounnt items",cartAmount);
         return(
             <div className="navbar-nav">
-                <Link to={'/cart'} className="nav-item nav-link" > <img src={cart} alt="Cart" height="36" /> 8 - Articulos</Link>
+                <Link to={'/cart'} className="nav-item nav-link" > <img src={cart} alt="Cart" height="36" /> {cartAmount>0? <span className="red">{cartAmount}</span>: ""} </Link>
            </div>
         )
  }

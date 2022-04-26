@@ -1,4 +1,4 @@
-.box{
+.box-item{
     width: calc(33% - 40px);
     margin: 20px;
     height: auto;
@@ -20,5 +20,5 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 14px;
   }
