@@ -25,7 +25,7 @@ const ItemDetail = ({item}) => {
                         <p>{item.title}</p> 
                         <p>$ {item.price}</p> 
                         <p> {item.stock} unidad{item.stock>1?"es":""} disponibles</p>
-                        <p>[{item.description}]</p>
+                        <p>{item.description}</p>
                         
                         {
                          itemCount ===0 

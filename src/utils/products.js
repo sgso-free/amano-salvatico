@@ -83,9 +83,8 @@ export const products = [
         stock: 100,
         price: 2530,
         idCategory: 3,
-        description: "En madera hecho a mano por artesanos....",
-        pictureUrl: ["http://http2.mlstatic.com/D_847796-MLA46593791630_072021-O.jpg"]
- 
+        description: "En madera hecho a mano por artesanos....", 
+        pictureUrl: ["http://http2.mlstatic.com/D_847796-MLA46593791630_072021-O.jpg"] 
     }
     
 ]; 

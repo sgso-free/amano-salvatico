@@ -13,7 +13,7 @@ const CartContextProvider = ( {children}) => {
             //Not in list
             let objItem =  {
                 idItem: item.id,
-                imgItem:item.pictureUrl[0],
+                imgItem:item.pictureUrl,
                 nameItem:item.title,
                 qtyItem: qty,
                 costItem:item.price                   
