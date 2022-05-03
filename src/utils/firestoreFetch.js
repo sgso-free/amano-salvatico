@@ -1,5 +1,5 @@
 import db from './firebaseConfig';
-import {doc, collection,getDoc,getDocs,query,where,orderBy} from "firebase/firestore";
+import {doc, collection,getDoc,getDocs,query,where,orderBy, setDoc} from "firebase/firestore";
 
 export const firestoreFetchOneProd = async (idItem) => {
 
@@ -42,5 +42,13 @@ export const firestoreFetchProductsBy = async (idCategory) => {
         }));
         
         return dataFromFirestore; 
+
+}
+
+export const createOrderInFirestore = async (order) => {
+
+        const newOrderRef = doc(collection(db,"orders"));
+        await setDoc(newOrderRef,order)
+        return newOrderRef
 
 }
