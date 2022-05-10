@@ -41,9 +41,7 @@ const Cart = () =>{
              items: itemOrder,
              date: serverTimestamp()
          };
-
-        console.log("Order New:",order);
-
+ 
         //Insert the order in the Firestore
         //if ok, delete the cartList and show a alert with the id of the order, 
         //ifnot show in the console the error

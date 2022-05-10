@@ -91,7 +91,7 @@ const CartContextProvider = ( {children}) => {
                         calcItemsQty,
                         calcTotal
                     }
-            }> {/*Share more than one param, use doble {{}} so convert to object*/}
+            }>  
                 {children}
         </CartContext.Provider>
     );

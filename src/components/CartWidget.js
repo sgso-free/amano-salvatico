@@ -17,7 +17,4 @@ import {CartContext} from "./CartContext";
            </div>
         )
  }
- export default CartWidget;
- 
- /*className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"*/
- 
+ export default CartWidget; 

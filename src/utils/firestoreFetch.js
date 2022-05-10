@@ -21,11 +21,9 @@ export const firestoreFetchProductsBy = async (idCategory) => {
 
         
         let qy;
-        if (idCategory) {
-                console.log("FETCHHHHHHHHHH:" ,idCategory);
+        if (idCategory) { 
                 qy = query(collection(db,"products"),where('idCategory', '==',parseInt(idCategory)));
-        } else {
-                console.log("FETCHHHHHHHHHH:" ,"NO CATEGORY");
+        } else { //not category
                 qy = query(collection(db,"products"), orderBy('title'));
         }
         
