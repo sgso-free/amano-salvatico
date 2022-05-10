@@ -1,10 +1,11 @@
 # AMANO
-    ##e-commerce realizado en ReactJs para venta de productos hechos a mano.
+    ## e-commerce realizado en ReactJs para venta de productos hechos a mano.
+    ## Proyecto final del curso ReactJs Coder
 
 ## Dependencias instaladas por npm:
-    - boostrap
-    - react-router-dom
-    - firebase
+- boostrap
+- react-router-dom
+- firebase
 
 ## Construido con
 - Visual Studio Code
